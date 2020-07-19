@@ -27,7 +27,7 @@ function updateSingle(object){
 // Loading animation
 window.onload = function (){
     $("#loading").animate({opacity: 1},200);
-    particlesJS.load('money_overlay', '../assets/particles.json', function() {});
+    particlesJS.load('money_overlay', 'assets/particles.json', function() {});
     setTimeout(function(){
         $("#loading").animate({opacity: 0},500, function(){
             $("#money_overlay").animate({opacity : 0.5},200);
