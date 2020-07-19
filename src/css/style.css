@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'TheNextFont';
-  src: url('/assets/thenextfont.woff2') format('woff2');
+  src: url('../assets/thenextfont.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Timeburner';
-  src: url('/assets/timeburnerbold.woff2') format('woff2');
+  src: url('../assets/timeburnerbold.woff2') format('woff2');
 }
 
 @-webkit-keyframes rotation {
