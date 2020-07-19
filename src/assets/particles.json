@@ -10,7 +10,7 @@
     "shape": {
       "type": "image",
       "image": {
-        "src": "/assets/money.png",
+        "src": "assets/money.png",
         "width": 340,
         "height": 174
       }
