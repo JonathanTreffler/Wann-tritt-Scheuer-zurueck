@@ -28,9 +28,11 @@ function updateSingle(object) {
 
 // Loading animation
 window.onload = function() {
-	let loading = document.getElementsByClassName("loading")[0];
-	let content = document.getElementsByClassName("content")[0];
-	let moneyOverlay = document.getElementsByClassName("money_overlay")[0];
+	let loading = document.getElementsByClassName("loading");
+	let content = document.getElementsByClassName("content");
+	let moneyOverlay = document.getElementsByClassName("money_overlay");
+	
+	console.log(loading, content, moneyOverlay);
 	
 	particlesJS.load('money_overlay', 'assets/particles.json', function() {});
 	setTimeout(function() {
