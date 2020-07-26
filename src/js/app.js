@@ -38,7 +38,4 @@ window.onload = function (){
     },1000);
 };
 
-// Impressum
-/*$("#impressum").click(function(){
-    Swal.fire('Impressum', 'Jonathan Treffler', 'info');
-});*/
+updateAll();
