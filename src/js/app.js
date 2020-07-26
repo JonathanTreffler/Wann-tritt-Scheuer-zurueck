@@ -2,40 +2,41 @@
 var interval = setInterval(updateAll, 1000);
 
 function updateAll() {
-  var countdowns = $(".countdown");
+	var countdowns = $(".countdown");
 
-  for(let i=0; i<countdowns.length; i++){
-      updateSingle(countdowns[i]);
-  }
+	for (let i = 0; i < countdowns.length; i++) {
+		updateSingle(countdowns[i]);
+	}
 }
 
-function updateSingle(object){
-  var countDownDate = new Date(object.dataset.year,object.dataset.month-1,object.dataset.day).getTime();
+function updateSingle(object) {
+	var countDownDate = new Date(object.dataset.year, object.dataset.month - 1, object.dataset.day).getTime();
 
-  var now = new Date().getTime();
+	var now = new Date().getTime();
 
-  var distance = countDownDate - now;
+	var distance = countDownDate - now;
 
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  object.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+	object.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 }
 
 // Loading animation
-window.onload = function (){
-    $("#loading").animate({opacity: 1},200);
-    particlesJS.load('money_overlay', 'assets/particles.json', function() {});
-    setTimeout(function(){
-        $("#loading").animate({opacity: 0},200, function(){
-            $("#loading").css("display","none");
-            $("#content").css("display","initial");
-            $("#content").css("opacity", 1);
-            $("#money_overlay").css("opacity", 0.5);
-        });
-    },700);
+window.onload = function() {
+	//$("#loading").animate({opacity: 1},200);
+	particlesJS.load('money_overlay', 'assets/particles.json', function() {});
+	setTimeout(function() {
+		$("#loading").css("opacity", 0);
+	}, 700);
+	setTimeout(function() {
+		$("#loading").css("display", "none");
+		$("#content").css("display", "initial");
+		$("#content").css("opacity", 1);
+		$("#money_overlay").css("opacity", 0.5);
+	}, 900);
 };
 
 updateAll();
