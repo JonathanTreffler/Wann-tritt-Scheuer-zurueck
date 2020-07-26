@@ -32,8 +32,8 @@ window.onload = function (){
         $("#loading").animate({opacity: 0},200, function(){
             $("#loading").css("display","none");
             $("#content").css("display","initial");
-            $("#content").animate({opacity: 1},500);
-            $("#money_overlay").animate({opacity : 0.5},200);
+            $("#content").css("opacity", 1);
+            $("#money_overlay").css("opacity", 0.5);
         });
     },700);
 };
