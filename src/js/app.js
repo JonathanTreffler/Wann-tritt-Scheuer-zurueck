@@ -28,9 +28,9 @@ function updateSingle(object) {
 
 // Loading animation
 window.onload = function() {
-	let loading = document.getElementById("loading")[0];
-	let content = document.getElementById("content")[0];
-	let moneyOverlay = document.getElementById("money_overlay")[0];
+	let loading = document.getElementById("loading");
+	let content = document.getElementById("content");
+	let moneyOverlay = document.getElementById("money_overlay");
 	
 	console.log(loading, content, moneyOverlay);
 	
