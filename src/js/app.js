@@ -29,13 +29,13 @@ window.onload = function (){
     $("#loading").animate({opacity: 1},200);
     particlesJS.load('money_overlay', 'assets/particles.json', function() {});
     setTimeout(function(){
-        $("#loading").animate({opacity: 0},500, function(){
-            $("#money_overlay").animate({opacity : 0.5},200);
+        $("#loading").animate({opacity: 0},200, function(){
             $("#loading").css("display","none");
             $("#content").css("display","initial");
             $("#content").animate({opacity: 1},500);
+            $("#money_overlay").animate({opacity : 0.5},200);
         });
-    },1000);
+    },700);
 };
 
 updateAll();
