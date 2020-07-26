@@ -2,8 +2,10 @@
 var interval = setInterval(updateAll, 1000);
 
 function updateAll() {
-	var countdowns = $(".countdown");
-
+	var countdowns = document.getElementsByClassName("countdown");
+	
+	console.log(countdowns);
+	
 	for (let i = 0; i < countdowns.length; i++) {
 		updateSingle(countdowns[i]);
 	}
@@ -26,16 +28,24 @@ function updateSingle(object) {
 
 // Loading animation
 window.onload = function() {
-	//$("#loading").animate({opacity: 1},200);
+	let loading = document.getElementsByClassName("loading")[0];
+	let content = document.getElementsByClassName("content")[0];
+	let moneyOverlay = document.getElementsByClassName("money_overlay")[0];
+	
 	particlesJS.load('money_overlay', 'assets/particles.json', function() {});
 	setTimeout(function() {
-		$("#loading").css("opacity", 0);
+		//$("#loading").css("opacity", 0);
+		loading.style.opacity = 0;
 	}, 700);
 	setTimeout(function() {
-		$("#loading").css("display", "none");
-		$("#content").css("display", "initial");
-		$("#content").css("opacity", 1);
-		$("#money_overlay").css("opacity", 0.5);
+		//$("#loading").css("display", "none");
+		loading.style.display = "none";
+		//$("#content").css("display", "initial");
+		content.style.display = "initial";
+		//$("#content").css("opacity", 1);
+		content.style.opacity = 1;
+		//$("#money_overlay").css("opacity", 0.5);
+		moneyOverlay.opacity = 0.5;
 	}, 900);
 };
 
