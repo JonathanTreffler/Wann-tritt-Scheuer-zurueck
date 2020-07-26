@@ -22,3 +22,5 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BASE_BRANCH: dev
         SINGLE_COMMIT: true
+    - name: "Notify Google Search Index"
+      run: curl http://www.google.com/ping?sitemap=https://wann-tritt-scheuer-zurück.de/sitemap.xml
