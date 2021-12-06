@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Andreas Scheuer Rücktrittsvorhersage</title>
+        <link rel="icon" href="/assets/scheuer.png">
+
+        <!-- Libaries -->
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="/js/app.js" defer></script>
+        <script src="/js/particles.min.js"></script>
+
+        <!-- Style -->
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+    <body>
+        <div id="app">
+            <div id="money_overlay" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div id="loading" style="opacity: 0;">
+                <div id="loading_image_container">
+                    <img id="loading_image" src="/assets/scheuer.png">
+                </div>
+            </div>
+            <div id="content" style="display: none; opacity: 0;">
+                <div class="countdown_container">
+                    <p class="countdown_title">Aktuelle Rücktrittsvorhersage:</p>
+                    <span class="countdown" data-year="2020" data-month="1" data-day="20"></span>
+                </div>
+                <span id="impressum">Impressum</span>
+            </div>
+        </div>
+    </body>
+</html>

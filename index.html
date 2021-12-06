@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        
+        <link rel="preload" href="assets/thenextfont.woff2" as="font" crossorigin>
+        <link rel="preload" href="assets/timeburnerbold.woff2" as="font" crossorigin>
+        <link rel="preload" href="css/style.css" as="style" crossorigin>
+        
+        <title>Wann tritt Scheuer zurück ?</title>
+        <link rel="icon" href="assets/favicon.png">
+        <meta name="description" content="Wann tritt Scheuer zurück ? Eine Website zur Vorhersage wie lange Andreas Scheuer noch im Amt bleibt. Countdown zum Rücktritt.">
+        <meta name="google-site-verification" content="KopdQfFHKw3rIzU9t3a9YOtcFykcQNjzaAYVkIPX4g0" />
+
+        <script src="js/particles.min.js" async></script>
+        <script src="js/app.js" defer async></script>
+
+        <!-- Style -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="app">
+            <div id="money_overlay" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div id="loading">
+                <div id="loading_image_container">
+                    <img id="loading_image" loading="lazy" src="assets/scheuer.webp">
+                </div>
+            </div>
+            <div id="content" style="display: none; opacity: 0;">
+                <div class="countdown_container">
+                    <p class="countdown_title">Aktuelle Rücktrittsvorhersage:</p>
+                    <!--<span class="countdown" data-year="2021" data-month="9" data-day="1"></span>-->
+                    <span class="countdown">Abgewählt 🥳</span>
+                </div>
+                <span id="impressum">Impressum: Jonathan Treffler</span>
+            </div>
+        </div>
+    </body>
+</html>

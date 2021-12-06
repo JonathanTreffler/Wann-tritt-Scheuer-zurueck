@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'TheNextFont';
+  src: url('../assets/thenextfont.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Timeburner';
+  src: url('../assets/timeburnerbold.woff2') format('woff2');
+  font-display: swap;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+#money_overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity linear 0.2s;
+}
+
+@media (pointer:none), (pointer:coarse) {
+  #money_overlay {
+    display: none;
+  }
+}
+
+#loading {
+  width: 100%;
+  height: 100%;
+  transition: opacity linear 0.2s;
+  opacity: 1;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+  transition: opacity linear 0.5s;
+}
+
+#loading_image_container {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 40%;
+  z-index: 200;
+}
+
+#loading_image {
+  animation: rotation 2s infinite linear;
+  -webkit-animation: rotation 2s infinite linear;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear,left top,right top,from(#e22828),to(#ff8c2f));
+  background: linear-gradient(90deg,#e22828 0,#ff8c2f);
+}
+
+#impressum {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: white;
+  font-family: Timeburner;
+}
+
+.countdown_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.countdown_title {
+  color: white;
+  font-family: Timeburner;
+  font-size: 5vw;
+  white-space: nowrap;
+}
+
+.countdown {
+  color: white;
+  font-size: 10vw;
+  width: fit-content;
+  white-space: nowrap;
+  font-family: TheNextFont;
+}
