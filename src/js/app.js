@@ -1,5 +1,5 @@
 // Countdown
-var interval = setInterval(updateAll, 1000);
+/*var interval = setInterval(updateAll, 1000);
 
 function updateAll() {
 	var countdowns = document.getElementsByClassName("countdown");
@@ -24,7 +24,7 @@ function updateSingle(object) {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	object.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-}
+}*/
 
 // Loading animation
 window.onload = function() {
@@ -51,4 +51,4 @@ window.onload = function() {
 	}, 900);
 };
 
-updateAll();
+//updateAll();
