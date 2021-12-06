@@ -3,7 +3,8 @@
 [![License](https://img.shields.io/github/license/JonathanTreffler/Wann-tritt-Scheuer-zurueck)](https://github.com/JonathanTreffler/Wann-tritt-Scheuer-zurueck/blob/dev/LICENSE)
 ![GitHub last commit](https://img.shields.io/github/last-commit/JonathanTreffler/Wann-tritt-Scheuer-zurueck)
 
-# Eine Website zur Vorhersage wie lange Andreas Scheuer noch im Amt bleibt
+# <del>Eine Website zur Vorhersage wie lange Andreas Scheuer noch im Amt bleibt</del>
+# Abgewählt :)
 ![screenshot](https://raw.githubusercontent.com/JonathanTreffler/Wann-tritt-Scheuer-zurueck/dev/img/screenshot.png)
 
 Die Steuergeldverschwendung hat ein Ende 🎉
