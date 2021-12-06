@@ -34,7 +34,7 @@ window.onload = function() {
 	
 	console.log(loading, content, moneyOverlay);
 	
-	particlesJS.load('money_overlay', 'assets/particles.json', function() {});
+	particlesJS.load('money_overlay', 'assets/party_popper.json', function() {});
 	setTimeout(function() {
 		//$("#loading").css("opacity", 0);
 		loading.style.opacity = 0;
