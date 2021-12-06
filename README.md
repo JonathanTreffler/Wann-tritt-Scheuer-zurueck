@@ -6,6 +6,6 @@
 # Eine Website zur Vorhersage wie lange Andreas Scheuer noch im Amt bleibt
 ![screenshot](https://raw.githubusercontent.com/JonathanTreffler/Wann-tritt-Scheuer-zurueck/master/img/screenshot.png)
 
-Es regnet verschwendete Steuergelder 🎉
+Die Steuergeldverschwendung hat ein Ende 🎉
 
 Es handelt sich hierbei um **Satire** und keine echte Informationsquelle.
