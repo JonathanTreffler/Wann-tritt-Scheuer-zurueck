@@ -4,7 +4,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/JonathanTreffler/Wann-tritt-Scheuer-zurueck)
 
 # Eine Website zur Vorhersage wie lange Andreas Scheuer noch im Amt bleibt
-![screenshot](https://raw.githubusercontent.com/JonathanTreffler/Wann-tritt-Scheuer-zurueck/master/img/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/JonathanTreffler/Wann-tritt-Scheuer-zurueck/dev/img/screenshot.png)
 
 Die Steuergeldverschwendung hat ein Ende 🎉
 
